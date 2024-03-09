@@ -68,11 +68,12 @@ function transform() {
 	const w = document.getElementById("width");
     const h = document.getElementById("height");
     let new_text = "";
-	new_text = (l.value * w.value * h.value) + '英吋';
-	let cm = (l.value * w.value * h.value * 2.54).toFixed(2);
-    new_text += '<br>' + cm + '公分';
-	let m = (cm/100).toFixed(2);
-	new_text += '<br>' + m + '公尺';
-	new_text += '<br>' + (m/(11.8 * 2.13 * 2.72)).toFixed(2) + '箱';
+	let inches = l.value * w.value * h.value;
+	new_text =  inches + '立方英吋';
+	let cm = ((l.value * 2.54) * (w.value * 2.54) * (h.value * 2.54)).toFixed(2);
+    new_text += '<br>' + cm + '立方公分';
+	let m = (((l.value * 2.54)/100) * ((w.value * 2.54)/100) * ((h.value * 2.54)/100)).toFixed(2);	
+	new_text += '<br>' + m + '立方公尺';
+	new_text += '<br>' + (67/m).toFixed(2) + '箱';
     document.getElementById("result").innerHTML = new_text;
 }

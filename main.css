@@ -193,6 +193,7 @@ p{
 .input-wrap {
     position: relative;
     display: inline-block;
+	margin-top: 2px;
 }
 .input-text {
     padding: 8px 5px;
