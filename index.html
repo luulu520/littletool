@@ -12,11 +12,33 @@
       gtag('config', 'G-0S56F43N93');
     </script>
     <link rel="stylesheet" href="main.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>小工具</title>
 </head>
 <body>
+
+    <form action="#" class="login-form">
+        <h1 class="login-title">容積計算</h1>
+
+        <div class="input-box">
+			<i class='bx bx-pencil'></i>
+            <input id="length" type="text" placeholder="長(英吋)">
+        </div>
+        <div class="input-box">
+			<i class='bx bx-pencil'></i>
+            <input id="width" type="text" placeholder="寬(英吋)">
+        </div>
+		<div class="input-box">
+			<i class='bx bx-pencil'></i>
+			<input id="height" type="text" placeholder="高(英吋)">
+        </div>
+        <button class="css_button" onclick="transform()">計算</button>
+		<h3 style="text-align:left; margin: 20px 0;">結果：</h3>
+		<p id="result"></p>
+    </form>
+	<!--
   <div id="container">
-    <h1>容積計算</h1>
+    <h1 class="title">容積計算</h1>
 	<div class="input-wrap">
     <input type="text" id="length" class="input-text" placeholder="長(英吋)">
     <span id="clear-search1" title="clear">×</span>
@@ -32,7 +54,7 @@
     <button id="css_button" onclick="transform()">計算</button>
     <h3>結果：</h3>
     <p id="result"></p>
-  </div>
+  </div>-->
 </body>
     <script src="script.js"></script>
 </html>

@@ -1,7 +1,8 @@
+/*
 (() => {
-    const clear_icon1 = document.getElementById("clear-search1");
-	const clear_icon2 = document.getElementById("clear-search2");
-    const clear_icon3 = document.getElementById("clear-search3");
+    //const clear_icon1 = document.getElementById("clear-search1");
+	//const clear_icon2 = document.getElementById("clear-search2");
+    //const clear_icon3 = document.getElementById("clear-search3");
 
     const l = document.getElementById("length");
 	const w = document.getElementById("width");
@@ -62,7 +63,7 @@
     clear_icon3.addEventListener("click", hideClearIcon3);
 
 })();
-
+*/
 function transform() {
     const l = document.getElementById("length");
 	const w = document.getElementById("width");
